@@ -67,7 +67,7 @@ jobs:
       if: ${{ matrix.cuda == 1 }}
       uses: Jimver/cuda-toolkit@v0.2.1
       with:
-        cuda: '11.8.0'  # 指定 CUDA 版本
+        cuda: '12.9.0'  # 指定 CUDA 版本
     - name: Build a package
       # CMake 3.25 regression fix. See https://stackoverflow.com/questions/74162633/problem-compiling-from-source-opencv-with-mvsc2019-in-64-bit-version
       run: |
